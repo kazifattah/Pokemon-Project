@@ -25,6 +25,10 @@
         
 
         function whosThatPokemon(i){
-            
-            document.getElementById("ball"+i).src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/"+getPokemonIndex()+".png"
+            let getBall = document.getElementById("ball"+i);
+            if (getBall.src=="./public/assets/pokeball-pokemon.svg"){
+                getBall.src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/"+getPokemonIndex()+".png";
+
+            }
+        
         }
