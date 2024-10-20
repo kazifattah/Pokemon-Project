@@ -26,9 +26,8 @@
 
         function whosThatPokemon(i){
             let getBall = document.getElementById("ball"+i);
-            if (getBall.src=="./public/assets/pokeball-pokemon.svg"){
+            if (getBall.src.match("pokeball")) {
                 getBall.src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/"+getPokemonIndex()+".png";
+              }
 
-            }
-        
         }
